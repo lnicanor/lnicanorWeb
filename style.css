@@ -1,0 +1,173 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: #1e1f35;
+  text-align: center;
+}
+.text {
+  position: fixed;
+  bottom: 50%;
+  width: 100%;
+}
+.intro {
+  text-align: center;
+}
+.svg {
+  position: fixed;
+  bottom: 0;
+  left: 40%;
+}
+
+.ml5,
+.ml6,
+.tem {
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: #c0f3f2;
+}
+.textCap2 {
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  font-weight: 300;
+  font-size: 2.1em;
+  color: #c0f3f2;
+}
+
+.ml5 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+
+.ml5 .line,
+.ml6 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  transform-origin: 0.5 0;
+}
+
+.ml5 .ampersand {
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+}
+
+.ml5 .letters,
+.ml6 .letters {
+  display: inline-block;
+  opacity: 0;
+}
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+}
+section .tem span {
+  position: relative;
+  display: inline-block;
+}
+.cap2 {
+  display: none;
+}
+#darkMode {
+  cursor: pointer;
+  position: relative;
+}
+.next {
+  cursor: pointer;
+  width: 172px;
+  border-radius: 47px;
+  margin-top: 274px;
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  font-weight: 400;
+  font-size: 2.1em;
+  border-color: #000000;
+  padding: 8px;
+  background-color: #00000000;
+  color: #000000;
+  bottom: 20%;
+}
+.next::before {
+  background-color: #00000000;
+  border-color: #00000000;
+}
+.container {
+  display: none;
+}
+.web {
+  position: absolute;
+  top: 5%;
+  right: 3%;
+  width: 70%;
+  height: 90%;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.menu {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  width: 10%;
+  height: 90%;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.btnMenu {
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btnMe {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+#flecha {
+  width: 69px;
+}
+.imgMenu {
+  width: 100px;
+  margin-left: 15px;
+}
+.txtLogo {
+  display: none;
+  top: 40%;
+  font-family: "Sansita Swashed", cursive;
+  position: relative;
+  font-weight: 300;
+  font-size: 2em;
+  color: #c0f3f2;
+}
