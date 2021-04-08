@@ -17,124 +17,126 @@ const darkMode = document.querySelector("#darkMode");
 let toggle = false;
 const btnNext = document.querySelector('.next');
 const btnMenu = document.querySelector('.btnMenu');
+const btnlogo = document.querySelector('.btnlogo');
+const btnWeb = document.querySelector('.btnWeb');
+const btnApp = document.querySelector('.btnApp');
+const btnContact = document.querySelector('.btnContact');
 //Animacion de todo el capitulo 1 
-anime.timeline({ loop: false })
-    .add({
-        targets: '.svg',
-        opacity: [0, 1],
-        easing: "easeInExpo",
-        duration: 1000
-    })
-    .add({
-        targets: '.ml5 .line',
-        opacity: [0.5, 1],
-        scaleX: [0, 1],
-        easing: "easeInOutExpo",
-        duration: 1000
-    }).add({
-        targets: '.ml5 .line',
-        duration: 900,
-        easing: "easeOutExpo",
-        translateY: (el, i) => (-0.625 + 0.625 * 2 * i) + "em"
-    }).add({
-        targets: '.ml5 .ampersand',
-        opacity: [0, 1],
-        scaleY: [0.5, 1],
-        easing: "easeOutExpo",
-        duration: 800,
-        offset: '-=600'
-    }).add({
-        targets: '.ml5 .letters-left',
-        opacity: [0, 1],
-        translateX: ["0.5em", 0],
-        easing: "easeOutExpo",
-        duration: 900,
-        offset: '-=300'
-    }).add({
-        targets: '.ml5 .letters-right',
-        opacity: [0, 1],
-        translateX: ["0.5em", 0],
-        easing: "easeOutExpo",
-        duration: 1100,
-        offset: '-=600'
-    }).add({
-        targets: '.ml5',
-        opacity: 0,
-        duration: 1100,
-        easing: "easeOutExpo",
+anime.timeline({ loop: false }).add({
+    targets: '.svg',
+    opacity: [0, 1],
+    easing: "easeInExpo",
+    duration: 1000
+}).add({
+    targets: '.ml5 .line',
+    opacity: [0.5, 1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 1000
+}).add({
+    targets: '.ml5 .line',
+    duration: 900,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625 * 2 * i) + "em"
+}).add({
+    targets: '.ml5 .ampersand',
+    opacity: [0, 1],
+    scaleY: [0.5, 1],
+    easing: "easeOutExpo",
+    duration: 800,
+    offset: '-=600'
+}).add({
+    targets: '.ml5 .letters-left',
+    opacity: [0, 1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 900,
+    offset: '-=300'
+}).add({
+    targets: '.ml5 .letters-right',
+    opacity: [0, 1],
+    translateX: ["0.5em", 0],
+    easing: "easeOutExpo",
+    duration: 1100,
+    offset: '-=600'
+}).add({
+    targets: '.ml5',
+    opacity: 0,
+    duration: 1100,
+    easing: "easeOutExpo",
 
-    }).add({
-        targets: '#Nave',
-        translateY: -730,
-        easing: "easeInOutBack",
-        duration: 2000
-    }).add({
-        targets: '.main',
-        background: '#000000',
-        easing: 'easeInOutBack',
-        direction: 'alternate'
-    }, "-=1100").add({
-        targets: '.ml6 .line',
-        opacity: [0.5, 1],
-        scaleX: [0, 1],
-        easing: "easeInOutExpo",
-        duration: 1000
-    }).add({
-        targets: '.ml6 .line',
-        duration: 900,
-        easing: "easeOutExpo",
-        translateY: (el, i) => (-0.625 + 0.625 * 2 * i) + "em"
-    }).add({
-        targets: '.ml6 #tem2 span',
-        opacity: [0, 1],
-        translateX: [-600, 0],
-        easing: "easeOutExpo",
-        duration: 900,
-        offset: '-=300',
-        delay: anime.stagger(100)
-    }).add({
-        delay: 1000,
-        targets: '.ml6 .letters-left',
-        opacity: [1, 0],
-        translateY: ["0em", -1],
-        easing: "easeInQuart",
-        duration: 600,
-        offset: '-=300'
-    }).add({
-        targets: '.ml6 .line',
-        duration: 900,
-        easing: "easeOutExpo",
-        translateY: (el, i) => (-0.625 + 0.625 * 2) + "em"
-    }).add({
-        targets: '.ml6 .line',
-        duration: 600,
-        easing: "easeOutExpo",
-        width: 0
-    }).add({
-        targets: '.ml6',
-        opacity: 0,
-        duration: 1100,
-        easing: "easeOutExpo"
+}).add({
+    targets: '#Nave',
+    translateY: -730,
+    easing: "easeInOutBack",
+    duration: 2000
+}).add({
+    targets: '.main',
+    background: '#000000',
+    easing: 'easeInOutBack',
+    direction: 'alternate'
+}, "-=1100").add({
+    targets: '.ml6 .line',
+    opacity: [0.5, 1],
+    scaleX: [0, 1],
+    easing: "easeInOutExpo",
+    duration: 1000
+}).add({
+    targets: '.ml6 .line',
+    duration: 900,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625 * 2 * i) + "em"
+}).add({
+    targets: '.ml6 #tem2 span',
+    opacity: [0, 1],
+    translateX: [-600, 0],
+    easing: "easeOutExpo",
+    duration: 900,
+    offset: '-=300',
+    delay: anime.stagger(100)
+}).add({
+    delay: 1000,
+    targets: '.ml6 .letters-left',
+    opacity: [1, 0],
+    translateY: ["0em", -1],
+    easing: "easeInQuart",
+    duration: 600,
+    offset: '-=300'
+}).add({
+    targets: '.ml6 .line',
+    duration: 900,
+    easing: "easeOutExpo",
+    translateY: (el, i) => (-0.625 + 0.625 * 2) + "em"
+}).add({
+    targets: '.ml6 .line',
+    duration: 600,
+    easing: "easeOutExpo",
+    width: 0
+}).add({
+    targets: '.ml6',
+    opacity: 0,
+    duration: 1100,
+    easing: "easeOutExpo"
 
-    }).add({
-        targets: '.tem span',
-        translateY: [-600, 0],
-        scale: [10, 1],
-        opacity: [0, 1],
-        easing: "easeOutExpo",
-        delay: anime.stagger(100)
+}).add({
+    targets: '.tem span',
+    translateY: [-600, 0],
+    scale: [10, 1],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    delay: anime.stagger(100)
 
-    }, "-=950").add({
-        targets: '.tem span',
-        translateY: [0, 600],
-        scale: [1, 1],
-        easing: "easeInCirc",
-        opacity: [1, 0],
-        duration: 2000,
-        rotate: '6turn',
-        delay: anime.stagger(100)
+}, "-=950").add({
+    targets: '.tem span',
+    translateY: [0, 600],
+    scale: [1, 1],
+    easing: "easeInCirc",
+    opacity: [1, 0],
+    duration: 2000,
+    rotate: '6turn',
+    delay: anime.stagger(100)
 
-    });
+});
 anime({
     targets: '#Mundo',
     translateY: 300,
@@ -192,6 +194,7 @@ $(document).ready(function () {
     }, 22000);
 
 });
+
 btnNext.addEventListener('click', () => {
 
     $(document).ready(function () {
@@ -201,23 +204,23 @@ btnNext.addEventListener('click', () => {
         }, 2000);
     });
     var gradients = {
-        start: '#7159B6',
-        end: '#582ACE'
+        start: '#321575',
+        end: '#00dbde',
     }
     var el = document.querySelector('.main');
     var animation = anime({
         targets: gradients,
-        start: '#321575',
-        end: '#00dbde',
+        start: '#5595e9',
+        end: '#ab31dc',
         duration: 3000,
         easing: 'easeOutQuad',
         round: 1,
-        loop: false,
+        loop: true,
         direction: 'alternate',
         update: function (a) {
             var value1 = a.animations[0].currentValue;
             var value2 = a.animations[1].currentValue;
-            el.style.backgroundImage = 'linear-gradient(320deg, ' + value1 + ' 0%, ' + value2 + ' 100%)'
+            el.style.backgroundImage = 'linear-gradient(320deg, ' + value1 + ' 25%, ' + value2 + ' 100%)'
         }
     });
 });
@@ -258,5 +261,23 @@ btnMenu.addEventListener('click', () => {
         menuActive = false;
     }
 });
+
+
+btnlogo.addEventListener('click', () => {
+
+});
+
+btnWeb.addEventListener('click', () => {
+
+});
+
+btnApp.addEventListener('click', () => {
+
+});
+
+btnContact.addEventListener('click', () => {
+
+});
+
 
 
