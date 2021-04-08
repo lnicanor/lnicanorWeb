@@ -212,7 +212,7 @@ btnNext.addEventListener('click', () => {
         duration: 3000,
         easing: 'easeOutQuad',
         round: 1,
-        loop: true,
+        loop: false,
         direction: 'alternate',
         update: function (a) {
             var value1 = a.animations[0].currentValue;
@@ -224,7 +224,7 @@ btnNext.addEventListener('click', () => {
 let menuActive = false;
 btnMenu.addEventListener('click', () => {
     anime({
-        targets: btnMenu,
+        targets: '#flecha',
         rotate: menuActive ? 0 : 180,
         easing: 'easeInExpo',
         duration: 500
@@ -232,7 +232,7 @@ btnMenu.addEventListener('click', () => {
     });
     anime({
         targets: '.menu',
-        width: menuActive ? '10%' : '30%',
+        width: menuActive ? '10%' : '33%',
         easing: 'easeOutSine'
     });
     anime({
@@ -240,11 +240,17 @@ btnMenu.addEventListener('click', () => {
         width: menuActive ? '70%' : '55%',
         easing: 'easeOutSine'
     });
-    /* menuActive ? setTimeout(function () {
-         $(".txtLogo").fadeIn(1000)
-     }, 900) : setTimeout(function () {
-         $(".txtLogo").fadeIn(1000)
-     });*/
+    menuActive ? $(document).ready(function () {
+        $(".txtMenu").fadeOut(200);
+
+    }) :
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".txtMenu").fadeIn(500);
+            }, 500);
+        });
+
+
 
     if (!menuActive) {
         menuActive = true;

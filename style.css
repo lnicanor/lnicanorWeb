@@ -156,18 +156,48 @@ section .tem span {
   margin-top: 10px;
 }
 #flecha {
+  left: 33px;
   width: 69px;
 }
 .imgMenu {
+  position: absolute;
   width: 100px;
-  margin-left: 15px;
+  left: 17px;
 }
-.txtLogo {
+.txtMenu {
   display: none;
-  top: 40%;
-  font-family: "Sansita Swashed", cursive;
   position: relative;
   font-weight: 300;
-  font-size: 2em;
-  color: #c0f3f2;
+  font-size: 42px;
+  color: white;
+  left: 34px;
+}
+#txtlogo {
+  left: 41px;
+  top: 115px;
+  font-family: "Sansita Swashed", cursive;
+}
+#txtDiseño {
+  left: 38px;
+  top: 179px;
+}
+#txtAndroid {
+  left: 59px;
+  top: 250px;
+}
+#txtContacto {
+  left: 7px;
+  top: 318px;
+}
+#logo {
+  top: 101px;
+}
+#diseñoweb {
+  top: 236px;
+}
+#android {
+  top: 376px;
+}
+#contacto {
+  top: 511px;
 }
