@@ -98,10 +98,12 @@ section .tem span {
   flex-direction: column;
 }
 #darkMode {
-  width: 100%;
+  width: 90%;
   height: 20%;
   cursor: pointer;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 .next {
   margin: auto;
@@ -109,7 +111,6 @@ section .tem span {
   width: 12%;
   border-radius: 30px;
   font-family: "Roboto Mono", monospace;
-  position: relative;
   font-weight: 400;
   font-size: 2vw;
   border-color: #000000;
@@ -243,8 +244,12 @@ h3.txtMenu {
     justify-content: space-around;
     display: flex;
   }
-  #darkMode {
-    width: 30%;
-    height: 0%;
+  .textCap2 {
+    font-size: 7vw;
+  }
+  .next {
+    width: 27%;
+    font-size: 5vw;
+    bottom: 20%;
   }
 }

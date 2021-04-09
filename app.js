@@ -181,13 +181,14 @@ darkMode.addEventListener('click', () => {
 
 });
 /* Eliminar elementos */
-
+const cap2 = document.querySelector('.cap2');
 $(document).ready(function () {
     setTimeout(function () {
         $(".text").fadeOut(1000);
     }, 22000);
     setTimeout(function () {
         $(".cap2").fadeIn(1000);
+        cap2.style.display = 'flex';
     }, 22000);
 
 });
@@ -214,7 +215,7 @@ btnNext.addEventListener('click', () => {
         easing: 'easeOutQuad',
         round: 1,
         // PONER EN TRUE PARA HACER UN BACKGROUND ANIMADO
-        loop: false,
+        loop: true,
         direction: 'alternate',
         update: function (a) {
             var value1 = a.animations[0].currentValue;
