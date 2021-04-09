@@ -181,12 +181,13 @@ darkMode.addEventListener('click', () => {
 
 });
 /* Eliminar elementos */
+const cap = document.querySelector('.cap2')
 $(document).ready(function () {
     setTimeout(function () {
         $(".text").fadeOut(1000);
     }, 22000);
     setTimeout(function () {
-        $(".cap2").fadeIn(1000);
+        cap.style.display = 'flex';
     }, 22000);
 
 });

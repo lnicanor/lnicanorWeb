@@ -93,17 +93,21 @@ section .tem span {
   display: inline-block;
 }
 .cap2 {
+  height: 100vh;
   display: none;
+  flex-direction: column;
 }
 #darkMode {
+  width: 100%;
+  height: 20%;
   cursor: pointer;
   position: relative;
 }
 .next {
+  margin: auto;
   cursor: pointer;
-  width: 172px;
-  border-radius: 47px;
-  margin-top: 274px;
+  width: 12%;
+  border-radius: 30px;
   font-family: "Roboto Mono", monospace;
   position: relative;
   font-weight: 400;
@@ -238,5 +242,9 @@ h3.txtMenu {
     border-radius: 30px;
     justify-content: space-around;
     display: flex;
+  }
+  #darkMode {
+    width: 30%;
+    height: 0%;
   }
 }
