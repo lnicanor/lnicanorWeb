@@ -16,11 +16,7 @@ const darkMode = document.querySelector("#darkMode");
 //la varible tooggle nos ayuda a definir las acciones de los modos de darkMode o lightMode
 let toggle = false;
 const btnNext = document.querySelector('.next');
-const btnMenu = document.querySelector('.btnMenu');
-const btnlogo = document.querySelector('.btnlogo');
-const btnWeb = document.querySelector('.btnWeb');
-const btnApp = document.querySelector('.btnApp');
-const btnContact = document.querySelector('.btnContact');
+
 //Animacion de todo el capitulo 1 
 anime.timeline({ loop: false }).add({
     targets: '.svg',
@@ -195,12 +191,13 @@ $(document).ready(function () {
 
 });
 
+const container = document.querySelector('.container')
 btnNext.addEventListener('click', () => {
 
     $(document).ready(function () {
         $('.cap2').fadeOut(1000)
         setTimeout(function () {
-            $(".container").fadeIn(1500);
+            container.style.display = 'flex';
         }, 2000);
     });
     var gradients = {
@@ -215,7 +212,8 @@ btnNext.addEventListener('click', () => {
         duration: 3000,
         easing: 'easeOutQuad',
         round: 1,
-        loop: true,
+        // PONER EN TRUE PARA HACER UN BACKGROUND ANIMADO
+        loop: false,
         direction: 'alternate',
         update: function (a) {
             var value1 = a.animations[0].currentValue;
@@ -224,60 +222,3 @@ btnNext.addEventListener('click', () => {
         }
     });
 });
-let menuActive = false;
-btnMenu.addEventListener('click', () => {
-    anime({
-        targets: '#flecha',
-        rotate: menuActive ? 0 : 180,
-        easing: 'easeInExpo',
-        duration: 500
-
-    });
-    anime({
-        targets: '.menu',
-        width: menuActive ? '10%' : '33%',
-        easing: 'easeOutSine'
-    });
-    anime({
-        targets: '.web',
-        width: menuActive ? '70%' : '55%',
-        easing: 'easeOutSine'
-    });
-    menuActive ? $(document).ready(function () {
-        $(".txtMenu").fadeOut(200);
-
-    }) :
-        $(document).ready(function () {
-            setTimeout(function () {
-                $(".txtMenu").fadeIn(500);
-            }, 500);
-        });
-
-
-
-    if (!menuActive) {
-        menuActive = true;
-    } else {
-        menuActive = false;
-    }
-});
-
-
-btnlogo.addEventListener('click', () => {
-
-});
-
-btnWeb.addEventListener('click', () => {
-
-});
-
-btnApp.addEventListener('click', () => {
-
-});
-
-btnContact.addEventListener('click', () => {
-
-});
-
-
-

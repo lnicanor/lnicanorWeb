@@ -19,9 +19,14 @@
   text-align: center;
 }
 .svg {
+  width: 100%;
   position: fixed;
   bottom: 0;
-  left: 40%;
+}
+.rocket {
+  margin: auto;
+  width: 100%;
+  height: 100vh;
 }
 
 .ml5,
@@ -30,14 +35,14 @@
   font-family: "Roboto Mono", monospace;
   position: relative;
   font-weight: 300;
-  font-size: 4.5em;
+  font-size: 5vw;
   color: #c0f3f2;
 }
 .textCap2 {
   font-family: "Roboto Mono", monospace;
   position: relative;
   font-weight: 300;
-  font-size: 2.1em;
+  font-size: 3vw;
   color: #c0f3f2;
 }
 
@@ -102,37 +107,38 @@ section .tem span {
   font-family: "Roboto Mono", monospace;
   position: relative;
   font-weight: 400;
-  font-size: 2.1em;
+  font-size: 2vw;
   border-color: #000000;
   padding: 8px;
   background-color: #00000000;
   color: #000000;
   bottom: 20%;
 }
-.next::before {
-  background-color: #00000000;
-  border-color: #00000000;
-}
+
 .container {
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
   display: none;
 }
-.web {
-  position: absolute;
-  top: 5%;
-  right: 3%;
-  width: 70%;
-  height: 90%;
+.content {
+  margin: auto;
+  width: 100%;
+  height: 86%;
   background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .menu {
-  position: absolute;
-  top: 5%;
-  left: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
   width: 10%;
   height: 90%;
   background: rgba(255, 255, 255, 0.05);
@@ -142,66 +148,49 @@ section .tem span {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.btnMenu {
-  width: 100%;
-  cursor: pointer;
-  margin-top: 10px;
-}
-.btnlogo,
-.btnWeb,
-.btnApp,
-.btnContact {
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 100%;
-  margin-top: 10px;
-}
-#flecha {
-  left: 33px;
-  width: 69px;
+h3.txtMenu {
+  margin: auto;
+  text-align: center;
 }
 .imgMenu {
-  position: absolute;
-  width: 100px;
-  left: 17px;
+  margin: auto;
+  width: 75%;
+  height: 75%;
 }
-.txtMenu {
-  display: none;
-  position: relative;
-  font-weight: 300;
-  font-size: 42px;
-  color: white;
-  left: 34px;
+.divleft {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  height: 90%;
+  margin: auto;
 }
-#txtlogo {
+.burguerS {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 30%;
+  margin-left: 70%;
+  height: 8%;
+  justify-content: space-around;
+  display: flex;
+}
+#icons {
+  width: 100%;
+  height: 70%;
+  margin: auto;
+}
+.social_media {
+  fill: #c0f3f2;
   cursor: pointer;
-  left: 41px;
-  top: 115px;
-  font-family: "Sansita Swashed", cursive;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  width: 100%;
 }
-#txtDiseño {
-  left: 38px;
-  top: 179px;
-}
-#txtAndroid {
-  left: 59px;
-  top: 250px;
-}
-#txtContacto {
-  left: 7px;
-  top: 318px;
-}
-#logo {
-  top: 101px;
-}
-#diseñoweb {
-  top: 236px;
-}
-#android {
-  top: 376px;
-}
-#contacto {
-  top: 511px;
+.social_media :hover {
+  fill: #428e82;
 }
