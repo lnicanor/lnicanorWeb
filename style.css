@@ -213,9 +213,9 @@ h3.txtMenu {
     box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
+    border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    width: 61%;
+    width: 50%;
     height: 100%;
     display: flex;
   }
@@ -233,8 +233,9 @@ h3.txtMenu {
     height: 74%;
   }
   .burguerS {
-    width: 30%;
+    width: 45%;
     height: 100%;
+    border-radius: 30px;
     justify-content: space-around;
     display: flex;
   }
