@@ -173,8 +173,7 @@ h3.txtMenu {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   width: 30%;
-  margin-left: 70%;
-  height: 8%;
+  height: 100%;
   justify-content: space-around;
   display: flex;
 }
@@ -193,4 +192,50 @@ h3.txtMenu {
 }
 .social_media :hover {
   fill: #428e82;
+}
+.navBar {
+  display: none;
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+  .divleft {
+    width: 90%;
+  }
+  .navBar {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 61%;
+    height: 100%;
+    display: flex;
+  }
+  .nav {
+    display: flex;
+    height: 8%;
+    justify-content: space-between !important;
+  }
+  .btnMenu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .social_media {
+    height: 74%;
+  }
+  .burguerS {
+    width: 30%;
+    height: 100%;
+    justify-content: space-around;
+    display: flex;
+  }
 }
