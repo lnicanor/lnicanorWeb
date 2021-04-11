@@ -21,6 +21,8 @@
   </head>
   <body>
     <div class="main">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
       <div class="intro">
         <div class="text">
           <div class="cap1">
@@ -29,14 +31,14 @@
                 <span class="line line1"></span>
                 <span class="letters letters-left">lnicanor</span>
                 <span class="letters ampersand">|</span>
-                <span class="letters letters-right">Desarrollador Web</span>
+                <span class="letters letters-right">Desarrollador web</span>
                 <span class="line line2"></span>
               </span>
             </h1>
             <h1 class="ml6">
               <span class="text-wrapper">
                 <span class="line line1"></span>
-                <span class="letters letters-left" id="tem2">Hola Mundo!!</span>
+                <span class="letters letters-left" id="tem2">Hola mundo!!</span>
                 <span class="line line2"></span>
               </span>
             </h1>
@@ -183,49 +185,88 @@
           >
             <path
               class="moon"
-              d="M40 73.0543C40 113.125 72.8257 145.609 72.8257 145.609C32.8024 145.609 0.357178 113.125 0.357178 73.0543C0.357178 32.9833 32.8024 0.499329 72.8257 0.499329C72.8257 0.499329 40 32.9833 40 73.0543Z"
+              d="M145.294 73.0543C145.294 113.125 112.849 145.609 72.8257 145.609C32.8024 145.609 0.357178 113.125 0.357178 73.0543C0.357178 32.9833 32.8024 0.499329 72.8257 0.499329C112.849 0.499329 145.294 32.9833 145.294 73.0543Z"
               fill="#e8da16"
             />
           </svg>
-          <h1 class="textCap2">Click the <span id="SM">moon.</span></h1>
-          <button class="next">Next</button>
+          <h1 class="textCap2">Click the sun.</h1>
+          <h3 class="next"></h3>
         </div>
       </div>
 
       <div class="container">
         <header class="menu">
           <div class="btnMenu">
-            <img class="imgMenu" src="img/icons-menu/logo.svg" alt="" />
+            <img
+              class="imgMenu"
+              src="img/icons-menu/logo.svg"
+              id="logo"
+              alt=""
+            />
             <h3 class="txtMenu">lnicanor</h3>
           </div>
           <div class="btnMenu">
-            <img class="imgMenu" src="img/icons-menu/web.svg" alt="" />
-            <h3 class="txtMenu">Diseño web</h3>
+            <img class="imgMenu" src="img/icons-menu/web.svg" id="web" alt="" />
+            <h3 class="txtMenu">Desarrollo web</h3>
           </div>
           <div class="btnMenu">
-            <img class="imgMenu" src="img/icons-menu/Android.svg" alt="" />
-            <h3 class="txtMenu">Aplicaciones</h3>
+            <img
+              class="imgMenu"
+              src="img/icons-menu/Android.svg"
+              id="app"
+              alt=""
+            />
+            <h3 class="txtMenu">Aplicaciones moviles</h3>
           </div>
           <div class="btnMenu">
-            <img class="imgMenu" src="img/icons-menu/contacto.svg" alt="" />
-            <h3 class="txtMenu">contacto</h3>
+            <img
+              class="imgMenu"
+              src="img/icons-menu/contacto.svg"
+              id="contact"
+              alt=""
+            />
+            <h3 class="txtMenu">Contacto</h3>
           </div>
         </header>
         <div class="divleft">
           <div class="nav">
             <div class="navBar">
               <div class="btnMenu">
-                <img class="imgMenu" src="img/icons-menu/logo.svg" alt="" />
+                <img
+                  class="imgMenu"
+                  src="img/icons-menu/logo.svg"
+                  id="logo"
+                  alt=""
+                />
               </div>
               <div class="btnMenu">
-                <img class="imgMenu" src="img/icons-menu/web.svg" alt="" />
+                <img
+                  class="imgMenu"
+                  src="img/icons-menu/web.svg"
+                  id="web"
+                  alt=""
+                />
               </div>
               <div class="btnMenu">
-                <img class="imgMenu" src="img/icons-menu/Android.svg" alt="" />
+                <img
+                  class="imgMenu"
+                  src="img/icons-menu/Android.svg"
+                  id="app"
+                  alt=""
+                />
               </div>
               <div class="btnMenu">
-                <img class="imgMenu" src="img/icons-menu/contacto.svg" alt="" />
+                <img
+                  class="imgMenu"
+                  src="img/icons-menu/contacto.svg"
+                  id="contact"
+                  alt=""
+                />
               </div>
+            </div>
+            <div class="tittle">
+              <img class="imgtittle" src="img/icons-menu/logo.svg" alt="" />
+              <h2 class="txtTittle">lnicanor</h2>
             </div>
             <div class="burguerS">
               <a
@@ -311,11 +352,14 @@
             </div>
           </div>
 
-          <div class="content"></div>
+          <div class="content">
+            <div class="lnicanor"></div>
+          </div>
         </div>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="app.js"></script>
+    <script src="introAnimation.js"></script>
   </body>
 </html>

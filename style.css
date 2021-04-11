@@ -38,12 +38,20 @@
   font-size: 5vw;
   color: #c0f3f2;
 }
+.tem,
+#tem2 {
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  font-weight: 300;
+  font-size: 5vw;
+  color: #000000;
+}
 .textCap2 {
   font-family: "Roboto Mono", monospace;
   position: relative;
   font-weight: 300;
-  font-size: 3vw;
-  color: #c0f3f2;
+  font-size: 2vw;
+  color: #000000;
 }
 
 .ml5 .text-wrapper {
@@ -109,14 +117,10 @@ section .tem span {
   margin: auto;
   cursor: pointer;
   width: 12%;
-  border-radius: 30px;
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   font-size: 2vw;
-  border-color: #000000;
-  padding: 8px;
-  background-color: #00000000;
-  color: #000000;
+  color: #d4f0f5;
   bottom: 20%;
 }
 
@@ -156,8 +160,12 @@ section .tem span {
 h3.txtMenu {
   margin: auto;
   text-align: center;
+  font-size: 2.1vh;
+  font-weight: 400;
+  color: #c0f3f2;
 }
 .imgMenu {
+  cursor: pointer;
   margin: auto;
   width: 75%;
   height: 75%;
@@ -203,7 +211,59 @@ h3.txtMenu {
 }
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+.tittle {
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.imgtittle {
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 12%;
+  height: 95%;
+}
+.lnicanor {
+  width: 98%;
+  height: 98%;
+  margin: auto;
+}
+.txtTittle {
+  font-size: 2.3vw;
+  margin-bottom: auto;
+  margin-top: auto;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  color: #c0f3f2;
+}
+.circle1 {
+  display: none;
+  border-radius: 100%;
+  position: fixed;
+  width: 30%;
+  height: 59%;
+  left: -12%;
+  top: -16%;
+  background-image: linear-gradient(-45deg, #7028e4 0%, #e5b2ca 100%);
+  box-shadow: 0px 4px 54px 20px rgb(0 0 0 / 42%);
+}
+.circle2 {
+  display: none;
+  border-radius: 100%;
+  position: fixed;
+  width: 12%;
+  height: 23%;
+  left: 53%;
+  top: -12%;
+  background: #3f70b1;
+  box-shadow: 0px 4px 54px 20px rgb(0 0 0 / 42%);
 }
 
 @media screen and (max-width: 700px) {
@@ -246,6 +306,9 @@ h3.txtMenu {
   }
   .textCap2 {
     font-size: 7vw;
+  }
+  .tittle {
+    display: none;
   }
   .next {
     width: 27%;
