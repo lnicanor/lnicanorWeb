@@ -31,6 +31,8 @@ btnNext.addEventListener('click', () => {
         //Pasar a la siguiente seccion
         setTimeout(function () {
             container.style.display = 'flex';
+            circle1.style.display = 'flex';
+            circle2.style.display = 'flex';
             var gradients = {
                 start: '#321575',
                 end: '#00dbde',
