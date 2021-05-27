@@ -228,9 +228,9 @@ h3.txtMenu {
         margin: 0px auto;
       }
 
-      .slick-slide {
-        margin: 0px 20px;
-      }
+.slick-slide {
+  margin: 0px 20px;
+}
 
       .slick-slide img {
         width: 30%;
@@ -259,7 +259,72 @@ h3.txtMenu {
       .slick-slide {
     margin: 0px ;
     }
-
+    .txtFomr{
+      text-align: end;
+      font-size: 1.3vw;
+    padding: 0;
+    font-weight: 400;
+    color: #ceebef;
+    }
+    .contact{
+      justify-content: space-around;
+      width: 100%;
+      height: 100%;
+    }
+    .formContact{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 60%;
+      height: 100%;
+    }
+   .input{
+     display: flex;
+     justify-content: space-between;
+   }
+    .inputForm {
+    background: rgba(35, 33, 39, 0.43);
+    box-shadow: inset 0px 0px 11px 2px rgb(0 0 0 / 25%);
+    backdrop-filter: blur(74px);
+    border-radius: 9px;
+    text-align: start;
+    font-size: 1.3vw;
+    padding: 0;
+    font-weight: 400;
+    color: #ceebef;
+    height: 35px;
+    width: 310px;
+    border: 5px;
+    padding: 5px;
+    }
+    input:focus-visible {
+    outline: none;
+    }
+    select:focus-visible{
+      outline: none;
+    }
+   select option{
+    background-color: #465CED;
+    }
+    option:hover{
+    background-color: #ff0101;
+    }
+    #txtArea:focus-visible{
+     outline: none;
+    }
+    #send{
+      padding-top: 0%;
+    width: 126px;
+    height: 43px;
+    padding-left: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    }
+  #txtArea{
+    margin: 0px;
+    height: 159px;
+    width: 310px;
+  }
 @media screen and (max-width: 700px) {
   .menu {
     display: none;
