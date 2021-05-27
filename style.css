@@ -448,5 +448,29 @@ h3.txtMenu {
   height: 75%;
   margin-top: 4%;
 }
+.inputForm{
+  font-size: 3vw;
+  width: 195px;
+  height: 25px;
+}
+.txtFomr{
+  text-align: center;
+    font-size: 3vw;
+}
+#txtArea {
+    margin: 0px;
+    height: 90px;
+    width: 196px;
+}
+#send{
+  margin-top: -16px;
+  transform: scale(0.5);
+      width: 200px;
+    height: 48px;
+    padding-left: 45px;
+}
+.input{
+  flex-direction: column;
+}
 }
       
