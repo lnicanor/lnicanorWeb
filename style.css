@@ -5,132 +5,18 @@
 }
 
 .main {
+  font-family: "Roboto Mono", monospace;
   width: 100%;
   height: 100vh;
-  background: #1e1f35;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);;
   text-align: center;
 }
-.text {
-  position: fixed;
-  bottom: 50%;
-  width: 100%;
-}
-.intro {
-  text-align: center;
-}
-.svg {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-}
-.rocket {
-  margin: auto;
-  width: 100%;
-  height: 100vh;
-}
-
-.ml5,
-.ml6,
-.tem {
-  font-family: "Roboto Mono", monospace;
-  position: relative;
-  font-weight: 300;
-  font-size: 5vw;
-  color: #c0f3f2;
-}
-.tem,
-#tem2 {
-  font-family: "Roboto Mono", monospace;
-  position: relative;
-  font-weight: 300;
-  font-size: 5vw;
-  color: #000000;
-}
-.textCap2 {
-  font-family: "Roboto Mono", monospace;
-  position: relative;
-  font-weight: 300;
-  font-size: 2vw;
-  color: #000000;
-}
-
-.ml5 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-  line-height: 1em;
-}
-
-.ml5 .line,
-.ml6 .line {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  height: 3px;
-  width: 100%;
-  background-color: #ffffff;
-  transform-origin: 0.5 0;
-}
-
-.ml5 .ampersand {
-  font-weight: 400;
-  width: 1em;
-  margin-right: -0.1em;
-  margin-left: -0.1em;
-}
-
-.ml5 .letters,
-.ml6 .letters {
-  display: inline-block;
-  opacity: 0;
-}
-.ml6 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-  line-height: 1em;
-}
-section .tem span {
-  position: relative;
-  display: inline-block;
-}
-.cap2 {
-  height: 100vh;
-  display: none;
-  flex-direction: column;
-}
-#darkMode {
-  width: 90%;
-  height: 20%;
-  cursor: pointer;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-.next {
-  margin: auto;
-  cursor: pointer;
-  width: 12%;
-  font-family: "Roboto Mono", monospace;
-  font-weight: 400;
-  font-size: 2vw;
-  color: #d4f0f5;
-  bottom: 20%;
-}
-
 .container {
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 100vh;
   display: flex;
-  display: none;
 }
 .content {
   display: flex;
@@ -206,7 +92,7 @@ h3.txtMenu {
   width: 100%;
 }
 .social_media :hover {
-  fill: #428e82;
+  fill: #4adabf;
 }
 .navBar {
   display: none;
@@ -232,9 +118,60 @@ h3.txtMenu {
   width: 12%;
   height: 95%;
 }
-.lnicanor {
+.lnicanor,
+.dweb,
+.android {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.lnicanor{
+  margin-top: 5%;
+}
+.contentWeb {
+  display: flex;
   width: 98%;
-  height: 98%;
+  height: 55%;
+  margin: auto;
+}
+.dweb,.android {
+  display: none;
+  flex-direction: column;
+}
+.contact{
+  display: none;
+}
+#And{
+  width: 80%;
+  height: 40%;
+}
+#svgAnd{
+  height: 40%;
+}
+.svgWeb {
+  width: 95%;
+  height: 35%;
+  margin: auto;
+  overflow: hidden;
+}
+.WebContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+  height: 100%;
+  margin: auto;
+  background: rgba(63, 103, 206, 0.11);
+  box-shadow: 0px 4px 9px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(49px);
+  border-radius: 20px;
+}
+.WebBTN {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+  height: 65%;
   margin: auto;
 }
 .txtTittle {
@@ -245,28 +182,83 @@ h3.txtMenu {
   font-weight: 300;
   color: #c0f3f2;
 }
-.circle1 {
-  display: none;
-  border-radius: 100%;
-  position: fixed;
-  width: 30%;
-  height: 59%;
-  left: -12%;
-  top: -16%;
-  background-image: linear-gradient(-45deg, #7028e4 0%, #e5b2ca 100%);
-  box-shadow: 0px 4px 54px 20px rgb(0 0 0 / 42%);
+.txtC {
+  font-weight: 400;
+  color: #e2e6ef;
+  font-size: 1.5vw;
+  padding: 0px 10%;
+  text-align: revert;
 }
-.circle2 {
-  display: none;
-  border-radius: 100%;
-  position: fixed;
-  width: 12%;
-  height: 23%;
-  left: 53%;
-  top: -12%;
-  background: #3f70b1;
-  box-shadow: 0px 4px 54px 20px rgb(0 0 0 / 42%);
+
+.btn1,
+.btn2,
+.btn3 {
+  padding: 8px;
+  background: #3f67ce6b;
+  box-shadow: 0px 4px 9px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(49px);
+  border-radius: 20px;
+  cursor: pointer;
 }
+.btn1 {
+  background: #00a2ad8f;
+}
+.btn3 {
+  padding: 7px;
+}
+
+.btnText {
+  text-align: start;
+  font-weight: 400;
+  color: #ceebef;
+  font-size: 1vw;
+}
+.TextWeb {
+  font-size: 1.3vw;
+  padding: 0 4%;
+  text-align: start;
+  font-weight: 400;
+  color: #ceebef;
+}
+.tittleMovil{
+  display: none;
+}
+.slider {
+        width: 50%;
+        margin: 0px auto;
+      }
+
+      .slick-slide {
+        margin: 0px 20px;
+      }
+
+      .slick-slide img {
+        width: 30%;
+        margin: auto;
+      }
+
+      .slick-prev:before,
+      .slick-next:before {
+        color: #baddf0;
+      }
+
+      .slick-slide {
+        transition: all ease-in-out 0.3s;
+        opacity: 0;
+        display: none;
+      }
+
+      .slick-active {
+        opacity: 0;
+        display: none;
+      }
+
+      .slick-current {
+        opacity: 1;
+      }
+      .slick-slide {
+    margin: 0px ;
+    }
 
 @media screen and (max-width: 700px) {
   .menu {
@@ -306,9 +298,6 @@ h3.txtMenu {
     justify-content: space-around;
     display: flex;
   }
-  .textCap2 {
-    font-size: 7vw;
-  }
   .tittle {
     display: none;
   }
@@ -317,10 +306,73 @@ h3.txtMenu {
     font-size: 6.5vw;
     bottom: 20%;
   }
-  .txtTittle {
+  .txtTittleM {
     font-size: 6vw;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 300;
+    color: #c0f3f2;
   }
-  .imgtittle {
+  .imgtittleM {
     width: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 95%;
   }
+  .tittleMovil{
+    font-weight: 600;
+    font-size: 4vw;
+    display: block;
+  }
+  .txtC{
+    font-size: 3.5vw;
+    padding: 0px 5%;
+  }
+  .slick-next
+{
+    z-index: 15;
+    right: 30px;
 }
+.slick-prev
+{
+    z-index: 15;
+    left: 30px;
+}
+.slider{
+  width: 65%;
+}
+.lnicanor{
+  height: 80%;
+}
+.contentWeb{
+  flex-direction: column;
+}
+.WebBTN{
+    flex-direction: initial;
+    height: 13%;
+    width: 100%;
+}
+.btnText{
+  text-align: center;
+  font-size: 2.4vw;
+}
+.btn1,.btn2,.btn3{
+  width: 30%;
+}
+.WebContent{
+  height: 73%;
+  width: 98%;
+}
+.TextWeb{
+  font-size: 3vw;
+}
+#svga{
+  width: 110%;
+}
+#textA{
+  font-size: 2.8vw;
+  text-align: center;
+}
+}
+      
